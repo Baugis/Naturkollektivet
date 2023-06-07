@@ -1,0 +1,704 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif !important;
+}
+
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer hr {
+    margin: 0;
+}
+
+footer a {
+    transition: all 0.1s ease 0s;
+}
+
+footer a:hover {
+    font-weight: 500;
+    transition: all 0.1s ease 0s;
+}
+
+nav {
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-dark .navbar-toggler {
+    border: none !important;
+}
+
+.navbar-dark .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-light .navbar-toggler {
+    border: none !important;
+}
+
+.navbar-light .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+/* BACKGROUND */
+.greyBackground {
+    background-color: #F4F6FA;
+}
+
+.bgColor {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out 0s;
+    backdrop-filter: blur(10px);
+}
+
+.bg-primary {
+    background-color: #3C6E71 !important;
+}
+
+/* TEXT/FONT */
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #232536;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #232536;
+    opacity: 87%;
+    font-family: 'Poppins', sans-serif !important;
+    line-height: 54px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 175%;
+    color: #575757;
+}
+
+ol li, ul li {
+    font-weight: 300;
+}
+
+a {
+    color: #575757;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+.active {
+    font-weight: 600;
+    background-color: transparent;
+}
+
+/* BUTTONS */
+.btn-lg {
+    padding: 0.5rem 1.6rem;
+}
+
+.btnActive {
+    background-color: #3C6E71;
+    color: white;
+}
+
+.btn-outline-white {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-outline-white:hover {
+    border: 1px solid rgb(224, 224, 224);
+    color: rgb(224, 224, 224);
+}
+
+.btn-outline-primary:focus {
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #3C6E71 !important;
+    border: none !important;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+.btn-primary:hover {
+    background-color: #305658 !important;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-outline-primary {
+    color: #3C6E71 !important;
+    border-color: #3C6E71 !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #3C6E71 !important;
+    color: white !important;
+}
+
+.button-kategorier {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.4);
+    padding: 8px 15px;
+    border-radius: 15px;
+    background-color: transparent;
+    width: 100px;
+    height: 45px;
+    margin: 2px;
+}
+
+#forsideCOA:hover {
+    background-color: #376466;
+    transition: all 0.3s ease 0s;
+}
+
+/* MIXITUP */
+.mixitup-control-active {
+    background-color: #3C6E71 !important;
+    color: white !important;
+}
+
+/* CUSTOM BOOTSTRAP */
+.card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: none;
+    border-radius: 10px;
+}
+
+.dropdown-menu-dark .dropdown-item.active {
+    background-color: transparent;
+}
+
+/* Lokasjon kart */
+#map {
+    height: 89vh; /* The height is 400 pixels */
+    width: 100vw; /* The width is the width of the web page */
+    margin-top: 49px;
+}
+
+  button.gm-ui-hover-effect {
+    visibility: hidden;
+}
+
+#lokasjon {
+    position: absolute;
+    top: 49px;
+    width: 420px;
+    background-color: white;
+    height: 89vh;
+    transform: translateX(-100%);
+    transition: all 0.3s ease 0s;
+    overflow-y: scroll;
+}
+
+@media only screen and (max-width: 700px) {
+    #lokasjon {
+        width: 100vw;
+    }
+}
+
+/* Kontakt oss */
+.accordion-button {
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F3;
+    border-radius: 10px !important;
+    transition: all 0.3s ease 0s;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-button:hover {
+    cursor: pointer;
+    background-color: rgb(218, 218, 219);
+    transition: all 0.3s ease 0s;
+}
+
+.accordion-button p {
+    font-weight: 300 !important;
+}
+
+.kontaktGuide p {
+    font-weight: 300;
+    margin: 0;
+}
+
+.accordion-button p {
+    max-height: 55px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.accordion-button h2 {
+    height: 70px;
+}
+
+.accordion-button::after {
+    visibility: hidden;
+}
+
+/* Index */
+#indexInformasjon {
+    background-color: white;
+}
+
+#indexInformasjonBilde img {
+    height: 370px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#indexGibort {
+    background-color: #3C6E71;
+}
+
+#indexGibort h4, #indexGibort h2, #indexGibort p {
+    color: white;
+}
+
+.indexGibortBoks {
+    background-color: white;
+    padding: 20px;
+}
+
+.indexGibortBoksTekst p{
+    color: #232536 !important;
+    font-size: 14px;
+}
+
+.indexGibortBoksOverskrift {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.indexGibortBoksIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(60, 110, 113, 0.1);
+    height: fit-content;
+    width: 44px;
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#indexVerdier {
+    background-color: #F9F9F9;
+}
+
+.indexVerdierBoks {
+    background-color: white;
+    padding: 40px;
+    transition: all 0.3s ease 0s;
+}
+
+.indexVerdierBoks:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transform: translateY(-5px);
+    transition: all 0.3s ease 0s;
+}
+
+.indexVerdierBoksIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(60, 110, 113, 0.1);
+    height: fit-content;
+    width: 44px;
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.indexVerdierBoks p {
+    font-size: 16px;;
+}
+
+.indexVerdierBoksOverskrift {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+#indexArtikler {
+    background-color: #ECF8F9;
+}
+
+.indexArtiklerBoks {
+    background-color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.indexArtiklerBoks:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transform: translateY(-5px);
+    transition: all 0.3s ease 0s;
+}
+
+.indexArtiklerBoksInnhold {
+    padding: 30px;
+}
+
+.indexArtiklerBoksInnhold h4 {
+    line-height: 36px;
+}
+
+.indexArtiklerBoks img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.indexArtiklerBoksFooter img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.indexArtiklerBoksFooterTekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.indexArtiklerBoksFooterTekst p {
+    margin: 0;
+}
+
+.indexArtiklerBoksFooterTekstNavn {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: -5px !important;
+}
+
+.indexArtiklerBoksFooterTekstDato {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 60%;
+}
+
+/* Artikkel */
+#artikkelBekledning {
+    background-color: #ECF8F9;
+}
+
+#artikkelBekledning ul li {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 60%;
+    line-height: 24px;
+}
+
+/* Utstyr */
+#utstyrÅrstid {
+    background-color: white;
+}
+
+#utstyrÅrstid ul {
+    margin: 0;
+}
+
+#utstyrÅrstid ul li {
+    font-weight: 600;
+    font-size: 16px;
+    margin: 10px;
+}
+
+#utstyrKategorier {
+    background-color: rgb(243, 243, 243);
+}
+
+#artikkelAlpintBekledning {
+    background-color: #ECF8F9;
+    
+}
+
+.swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+    transform: none !important;
+    left: auto !important;
+    width: 100% !important;
+}
+
+input:focus {
+    box-shadow: none !important;
+}
+
+.kontaktBoks {
+    background-color: #3C6E71;
+    padding: 100px;
+}
+
+.kontaktBoksItem {
+    margin-bottom: 40px;
+}
+
+.kontaktBoksItem p {
+    color: white;
+    margin: 0;
+    font-weight: 500;
+    transition: all 0.3s ease 0s;
+}
+
+.kontaktBoksItem a {
+    transition: all 0.3s ease 0s;
+}
+
+.kontaktBoksItem a:hover {
+    color: rgb(218, 218, 218) !important;
+    transition: all 0.3s ease 0s;
+}
+
+.kontaktBoksItem a p:hover {
+    color: rgb(218, 218, 218) !important;
+    transition: all 0.3s ease 0s;
+}
+
+.kontaktBoksOverskrift {
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    opacity: 70%;
+    margin-bottom: 10px !important;
+}
+
+input {
+    border: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    border-radius: 0% !important;
+    padding: 5px 5px 5px 0 !important;
+}
+
+label {
+    font-weight: 500 !important;
+    opacity: 70% !important;
+}
+
+textarea {
+    border: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    border-radius: 0% !important;
+    padding: 5px 5px 5px 0 !important;
+    font-weight: 300 !important;
+}
+
+textarea:focus {
+    box-shadow: none !important;
+}
+
+select {
+    border: none !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3) !important;
+    border-radius: 0% !important;
+    padding: 5px 5px 5px 0 !important;
+    font-weight: 300 !important;
+}
+
+#sokeflet {
+    border-radius: 25px !important;
+    border: none !important;
+    background-color: #F5F5F5 !important;
+    padding: 5px 5px 5px 10px !important;
+}
+
+.button-sortering {
+    border: 1px solid rgba(0, 0, 0, 0.2) !important;
+    color: rgba(0, 0, 0, 0.4) !important;
+    padding: 8px 15px !important;
+    border-radius: 15px !important;
+    background-color: transparent !important;
+    height: 45px !important;
+}
+
+
+/* Handlevogn*/
+.handlevogn:hover {
+    cursor: pointer
+}
+
+.cart {
+    position: relative;
+    width: fit-content;
+}
+
+.cart span {
+    top: -10px;
+    right: 0;
+    position: absolute;
+}
+
+
+
+
+/* Cart */
+.products-container {
+    width: 80%;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.products-container ion-icon {
+    font-size: 25px;
+    color: #3C6E71;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.product ion-icon {
+    cursor: pointer;
+}
+
+.product-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+}
+
+.product {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    justify-content: space-around;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.products img {
+    width: auto;
+    height: 100px;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30;
+}
+
+
+/* CHECKOUT */
+.checkout-container {
+    justify-content: flex-end;
+    padding: 10px 0;
+    width: 80%;
+    display: flex;
+}
+
+/* OmOss */
+#OmOssOverskrift {
+    background-color: #3C6E71;
+}
+
+/* Gi bort */
+#GiBortOverskrift {
+    background-color: #3C6E71;
+    color: white;
+}
+
+#GiBortOverskrift p {
+    color: white;
+}
+
+
+#UtstyrInformasjon {
+    background-color: white;
+}
+
+#KontaktInformasjon {
+    background-color: white;
+}
+
+.gibortGibortBoksIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(60, 110, 113, 0.1);
+    height: fit-content;
+    width: 44px;
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
+.FAQgibort {
+    background-color: white;
+    margin-top: -50px;
+}
+
+.FAQgibort.accordion-item {
+    margin: 0px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #3C6E71;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) p {
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+
+.navcart {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Finnes ikke */
+.artikkelfinnesikke a {
+    font-weight: 600;
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Naturkollektivet - Handlekurv</title>
+
+	<!-- Stylesheets  -->
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./assets/css/style.css" />
+
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+	<!-- Swiper JS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-white py-3" id="navbar"
+			style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+			<!-- Container wrapper -->
+			<div class="container">
+				<a class="navbar-brand fw-bold text-black" href="./index.html">NATURKOLLEKTIVET</a>
+				<!-- Toggle button -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Collapsible wrapper -->
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<!-- Left links -->
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link text-black" href="./gibort.html">Gi bort</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-black" href="./utstyr.html">Utstyr</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">Artikler</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="./artikkelFjelltur.html">Fjelltur</a></li>
+								<li><a class="dropdown-item" href="./artikkelAlpint.html">Alpint</a></li>
+								<li><a class="dropdown-item" href="./finnesIkke.html">Langrenn</a></li>
+								<li><a class="dropdown-item" href="./finnesIkke.html">Skøyting</a></li>
+								<li><a class="dropdown-item" href="./finnesIkke.html">Skogstur</a></li>
+								<li><a class="dropdown-item" href="./finnesIkke.html">Sykkeltur</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-black" href="./kontaktoss.html">Kontakt</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-black" href="./omoss.html">Om oss</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-black" href="./lokasjoner.html">Lokasjoner</a>
+						</li>
+					</ul>
+
+          			<!-- Handlekurv -->
+					<div class="cart-btn">
+						<div class="cart">
+							<img src="./assets/img/Ikoner/shopping-bag.png" alt="handle-bag" style="width: 30px;" class="handlevogn" />
+							<a href="./handlekurv.html" id="test"><span></span></a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Left links -->
+			</div>
+			<!-- Collapsible wrapper -->
+		</nav>
+	</header>
+	
+
+
+
+	<main>
+
+		<!--Tabell for produkter-->
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="products-container">
+						<div class="row">
+							<div class="product-header">
+								<div class="col-6">
+									<h6 class="product-title">PRODUKTER</h6>
+								</div>
+								<div class="col-2">
+									<h6 class="price">PRIS PER</h6>
+								</div>
+								<div class="col-2">
+									<h6 class="quantity">ANTALL</h6>
+								</div>
+								<div class="col-2">
+									<h6 class="total">TOTALT</h6>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="products">
+							
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<!--Checkout-->
+			<div class="row">
+				<div class="col-12 d-flex justify-content-center">
+					<div class="checkout-container align-items-center">
+						<button onclick="checkout()" class="checkoutBtn btn btn-primary ms-auto">
+							RESERVER UTSTYR
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+
+
+	</main>
+
+
+
+    
+       
+	<footer class="text-center text-lg-start text-muted">
+        <div class="container">
+            <!-- Section: Links  -->
+            <section>
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <!-- Grid column -->
+                        <div class="col-12 col-lg-4 mx-auto mb-4">
+                            <!-- Content -->
+                            <a class="navbar-brand mb-3 a-normal" href="#">
+                                <h5>NATURKOLLEKTIVET</h5>
+                            </a>
+                            <p>
+                                Vi satser på å tilby rimelige friluftsutstyr for enhver person. Vi kjøper brukt
+                                utstyr,
+                                undersøker det grundig og reparerer det, og gjør det tilgjengelig for leie til en
+                                brøkdel av
+                                prisen for nytt utstyr.
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Snarveier
+                            </h6>
+                            <p>
+                                <a href="./gibort.html" class="text-reset">Gi bort</a>
+                            </p>
+                            <p>
+                                <a href="./utstyr.html" class="text-reset">Utstyr</a>
+                            </p>
+                            <p>
+                                <a href="./omoss.html" class="text-reset">Om oss</a>
+                            </p>
+                            <p>
+                                <a href="./kontaktoss.html" class="text-reset">Kontakt oss</a>
+                            </p>
+                            <p>
+                                <a href="./lokasjoner.html" class="text-reset">Lokasjoner</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-6 col-sm-6 col-md-3 col-lg-2 mx-auto mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Artikler
+                            </h6>
+                            <p>
+                                <a href="./artikkelFjelltur.html" class="text-reset">Fjelltur</a>
+                            </p>
+                            <p>
+                                <a href="./artikkelAlpint.html" class="text-reset">Alpint</a>
+                            </p>
+                            <p>
+                                <a href="./finnesIkke.html" class="text-reset">Langrenn</a>
+                            </p>
+                            <p>
+                                <a href="./finnesIkke.html" class="text-reset">Skøyting</a>
+                            </p>
+                            <p>
+                                <a href="./finnesIkke.html" class="text-reset">Skogstur</a>
+                            </p>
+                            <p>
+                                <a href="./finnesIkke.html" class="text-reset">Sykkeltur</a>
+                            </p>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-4 mx-auto mb-md-0 mb-4">
+                            <!-- Links -->
+                            <h6 class="text-uppercase fw-bold mb-4">Kontakt oss</h6>
+                            <p><i class="fas fa-home me-3"></i><a href="https://goo.gl/maps/v7SLvYJxnHLx2ciK7"
+                                    target="_blank">Benterudstranda 9</a></p>
+                            <p>
+                                <i class="fas fa-envelope me-3"></i>
+                                <a href="mailto:kontakt@naturkollektivet.no"
+                                    target="_blank">Kontakt@naturkollektivet.no</a>
+                            </p>
+                            <p><i class="fas fa-phone me-3"></i><a href="tel:+4712345678">+ 47 123 45 678</a></p>
+                            <p><i class="fas fa-print me-3"></i><a href="tel:+4798765432">+ 47 987 65 432</a></p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+        </div>
+
+
+
+        <!-- Copyright -->
+        <div class="text-center pt-3 pb-1" style="background-color: rgba(0, 0, 0, 0.05);">
+            <p style="margin-bottom: 0px;">© 2023 Copyright: <a class="text-reset fw-bold"
+                    href="./index.html">naturkollektivet.no</a></p>
+            <p><a href="./cookies.html">Cookies | </a><a href="./personvern.html">Personvern</a></p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+	<!-- SCRIPTS -->
+	<!-- JS-->
+	<script src="./assets/js/main.js"></script>
+	<script src="./assets/js/handlekurv.js"></script>
+    
+	<!-- Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- ION ICON -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+	<!-- FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/92cc2eddce.js" crossorigin="anonymous"></script>
+
+	<!-- AOS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+	<!-- MixItUp -->
+	<script src="./assets/js/mixitup.min.js"></script>
+	<!-- Kategori valg funksjon-->
+	<script>
+		var products = document.querySelector("#produktkatalog-produkter");
+		var mixer = mixitup(products);
+	</script>
+	<!-- Sorterings funksjon -->
+	<script>
+		var selectSort = document.querySelector(".select-sort");
+
+		selectSort.addEventListener("change", function () {
+			var order = selectSort.value;
+
+			mixer.sort(order);
+		});
+	</script>
+
+	<!-- Søkefunksjon -->
+	<script>
+		var container = document.querySelector('[data-ref="container"]');
+		var inputSearch = document.querySelector('[data-ref="input-search"]');
+		var keyupTimeout;
+
+		var mixer = mixitup(container, {
+			animation: {
+				duration: 150,
+			},
+			callbacks: {
+				onMixClick: function () {
+					// Reset the search if a filter is clicked
+
+					if (this.matches("[data-filter]")) {
+						inputSearch.value = "";
+					}
+				},
+			},
+		});
+
+		// Set up a handler to listen for "keyup" events from the search input
+
+		inputSearch.addEventListener("keyup", function () {
+			var searchValue;
+
+			if (inputSearch.value.length < 1) {
+				// If the input value is less than 3 characters, don't send
+
+				searchValue = "";
+			} else {
+				searchValue = inputSearch.value.toLowerCase().trim();
+			}
+
+			// Very basic throttling to prevent mixer thrashing. Only search
+			// once 350ms has passed since the last keyup event
+
+			clearTimeout(keyupTimeout);
+
+			keyupTimeout = setTimeout(function () {
+				filterByString(searchValue);
+			}, 350);
+		});
+
+		/**
+		 * Filters the mixer using a provided search string, which is matched against
+		 * the contents of each target's "class" attribute. Any custom data-attribute(s)
+		 * could also be used.
+		 *
+		 * @param  {string} searchValue
+		 * @return {void}
+		 */
+
+		function filterByString(searchValue) {
+			if (searchValue) {
+				// Use an attribute wildcard selector to check for matches
+
+				mixer.filter('[class*="' + searchValue + '"]');
+			} else {
+				// If no searchValue, treat as filter('all')
+
+				mixer.filter("all");
+			}
+		}
+	</script>
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper', {
+			//Pagination
+			pagination: {
+				el: '.swiper-pagination',
+				dynamicBullets: true,
+			},
+
+			//Breakpoints
+			slidesPerView: 2,
+			spaceBetween: 0,
+
+			breakpoints: {
+				576: {
+					slidesPerView: 3,
+					spaceBetween: 17,
+				},
+
+				768: {
+					slidesPerView: 4,
+					spaceBetween: 15,
+				},
+
+				992: {
+					slidesPerView: 6,
+					spaceBetween: 10,
+				},
+
+				1200: {
+					slidesPerView: 8,
+					spaceBetween: 0,
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>

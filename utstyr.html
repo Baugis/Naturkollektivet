@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Naturkollektivet - Utstyr</title>
+
+	<!-- Stylesheets  -->
+	<link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="./assets/css/style.css" />
+
+	<!-- AOS -->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+	<!-- Swiper JS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+</head>
+
+<body>
+	<header class="mb-4">
+		<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top py-3" id="navbar"
+			style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+			<!-- Container wrapper -->
+			<div class="container">
+				<a class="navbar-brand fw-bold text-black" href="./index.html">NATURKOLLEKTIVET</a>
+				<!-- Toggle button -->
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+					aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- Collapsible wrapper -->
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+					<!-- Left links -->
+					<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link text-black" href="./gibort.html">Gi bort</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-black active" href="./utstyr.html">Utstyr</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+								aria-expanded="false">Artikler</a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li><a class="dropdown-item" href="./artikkelFjelltur.html">Fjelltur</a></li>
+								<li><a class="dropdown-item" href="./artikkelAlpint.html">Alpint</a></li>
+								<li><a class="dropdown-item" href="./finnesIkke.html">Langrenn</a></li>
+								<li><a class="dropdown-item" href="./finnesIkke.html">Skøyting</a></li>
+								<li><a class="dropdown-item" href="./finnesIkke.html">Skogstur</a></li>
+								<li><a class="dropdown-item" href="./finnesIkke.html">Sykkeltur</a></li>
+							</ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-black" href="./kontaktoss.html">Kontakt</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-black" href="./omoss.html">Om oss</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link text-black" href="./lokasjoner.html">Lokasjoner</a>
+						</li>
+					</ul>
+	
+					<div class="cart-btn">
+						<div class="cart">
+							<img src="./assets/img/Ikoner/shopping-bag.png" alt="handle-bag" style="width: 30px;"
+								class="handlevogn" />
+							<a href="./handlekurv.html" id="test"><span></span></a>
+						</div>
+					</div>
+					<!-- Left links -->
+				</div>
+				<!-- Collapsible wrapper -->
+			</div>
+			<!-- Container wrapper -->
+		</nav>
+	
+		<!-- Background image -->
+		<!-- <div class="bg-image"
+	            style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/img/Kontaktoss/phone.jpg'); height: 400px; background-size: cover; background-position: 50%;">
+	
+	            <div class="container d-flex justify-content-center align-items-center h-100">
+	
+	                <div class="text-white text-center" data-aos="zoom-in" data-aos-duration="700">
+	                    <h1 class="mb-3">Kontakt oss</h1>
+	                </div>
+	            </div>
+	        </div> -->
+	</header>
+
+	<main class="mb-6">
+		<div class="utstyrSticky" style="margin-top: 75px;">
+			<section id="utstyrÅrstid">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 d-flex justify-content-around align-items-center py-1 text-center">
+							<ul class="list-unstyled d-flex">
+								<a href="#">
+									<li style="border-bottom: 2px solid rgba(0, 0, 0, 0.5);">Vinter</li>
+								</a>
+								<a href="#">
+									<li>Vår</li>
+								</a>
+								<a href="#">
+									<li>Sommer</li>
+								</a>
+								<a href="#">
+									<li>Høst</li>
+								</a>
+							</ul>
+							<div class="form-outline">
+								<input type="search" id="sokeflet" class="form-control" placeholder="Søk her"
+									data-ref="input-search" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="utstyrKategorier" style="border-bottom: 1px solid rgba(0, 0, 0, 0.1);">
+				<div class="container">
+					<div class="row pt-2">
+						<div class="col-7 col-sm-8 col-lg-10 d-flex justify-content-center">
+							<div class="swiper mb-3 mb-xl-0">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<button type="button" data-filter="all" class="button-kategorier mb-2">
+											Alt
+										</button>
+									</div>
+									<div class="swiper-slide">
+										<button type="button" data-filter=".langrenn" class="button-kategorier mb-2">
+											Langrenn
+										</button>
+									</div>
+									<div class="swiper-slide">
+										<button type="button" data-filter=".alpint" class="button-kategorier mb-2">
+											Alpint
+										</button>
+									</div>
+									<div class="swiper-slide">
+										<button type="button" data-filter=".truger" class="button-kategorier mb-2">
+											Truger
+										</button>
+									</div>
+									<div class="swiper-slide">
+										<button type="button" data-filter=".tursko" class="button-kategorier mb-2">
+											Tursko
+										</button>
+									</div>
+									<div class="swiper-slide">
+										<button type="button" data-filter=".akebrett" class="button-kategorier mb-2">
+											Akebrett
+										</button>
+									</div>
+									<div class="swiper-slide">
+										<button type="button" data-filter=".skoyter" class="button-kategorier mb-2">
+											Skøyter
+										</button>
+									</div>
+									<div class="swiper-slide">
+										<button type="button" data-filter=".brodder" class="button-kategorier mb-2">
+											Brodder
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-5 col-sm-4 col-lg-2 d-flex justify-content-end">
+							<select class="select-sort button-sortering" name="velg-sortering" id="velg-sortering">
+								<option value="default:asc">Anbefalt</option>
+								<option value="publisert:desc">Nyeste</option>
+								<option value="pris:desc">Pris: Høy-Lav</option>
+								<option value="pris:asc">Pris: Lav-Høy</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+
+
+	
+
+	  <div class="container">
+			<!-- Produkter -->
+			<section data-aos="fade-up" data-aos-duration="1000" data-aos-offset="0">
+				<div class="container py-5" id="produktkatalog-produkter" data-ref="container">
+					<div class="row">
+
+
+						<!-- ino-volkl-122503SET-214--hero-x-0001 -->
+						<div class="col-md-6 col-lg-4 col-xl-3 mb-4 mix alpint volkl alpin ski gul ski" data-pris="5"
+							data-publisert="20221222" data-price="5"
+							data-title="Völkl · Racetiger SC Limited vMotion alpinski m/binding" data-id="1">
+							<div class="card h-100" id="cart-item">
+								<img class="image"
+									src="./assets/img/Produktkatalog/ino-volkl-122503SET-214--hero-x-0001.jpg" alt=""
+									card-img-top alt="" style="height: 200px; object-fit: contain;">
+								<div class="card-body d-flex flex-column">
+									<div class="d-flex justify-content-between">
+										<p class="small">
+											<a href="./produktside.html" class="text-muted">Völkl, Alpint</a>
+										</p>
+									</div>
+
+								<div class="d-flex justify-content-between mb-5">
+									<h5 class="mb-0">
+										<a href="./produktside.html">Völkl · Racetiger SC Limited vMotion alpinski
+											m/binding</a>
+									</h5>
+								</div>
+
+								<div class="mt-auto">
+									<div class="d-flex justify-content-between align-items-center">
+										<p class="text-muted mb-0">
+											Pris: <span class="product-price fw-bold ms-2">10 Kr</span>
+										</p>
+                    					<button class="add-cart cart1 btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Legg til</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+						<!-- ino-madshus-N21297-000-hero-x-0001 -->
+						<div class="col-md-6 col-lg-4 col-xl-3 mb-4 mix langrenn madshus felle felleski blå endurance skin ski"
+							data-pris="20" data-publisert="20220321">
+							<div class="card h-100 cart-item">
+								<img class="product-image card-img-top"
+									src="./assets/img/Produktkatalog/ino-madshus-N21297-000-hero-x-0001.jpg" alt=""
+									style="height: 200px; object-fit: contain" />
+								<div class="card-body d-flex flex-column">
+									<div class="d-flex justify-content-between">
+										<p class="small">
+											<a href="./produktside.html" class="text-muted">Madshus, Langrennski</a>
+										</p>
+									</div>
+
+									<div class="d-flex justify-content-between mb-5">
+										<h5 class="mb-0">
+											<a href="./produktside.html">Madshus · Endurace Skin felleski</a>
+										</h5>
+									</div>
+
+									<div class="mt-auto">
+										<div class="d-flex justify-content-between align-items-center">
+											<p class="text-muted mb-0">
+												Pris:
+												<span class="product-price fw-bold ms-2">20 Kr</span>
+											</p>
+											<button class="add-cart cart2 btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Legg til</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- ino-k2-S220301601_1-001-hero-x-0001 -->
+						<div class="col-md-6 col-lg-4 col-xl-3 mb-4 mix alpint k2 alpin alpinski svart twin twintip twintipski ski"
+							data-pris="1" data-publisert="20221230">
+							<div class="card h-100 cart-item">
+								<a href="./produktside.html"><img
+										src="./assets/img/Produktkatalog/ino-k2-S220301601_1-001-hero-x-0001.jpg"
+										class="card-img-top" alt="" style="height: 200px; object-fit: contain" /></a>
+								<div class="card-body d-flex flex-column">
+									<div class="d-flex justify-content-between">
+										<p class="small">
+											<a href="./produktside.html" class="text-muted">K2, Alpint</a>
+										</p>
+									</div>
+
+									<div class="d-flex justify-content-between mb-5">
+										<h5 class="mb-0">
+											<a href="./produktside.html">K2 · K2 Reckoner 92 twintipski</a>
+										</h5>
+									</div>
+
+									<div class="mt-auto">
+										<div class="d-flex justify-content-between align-items-center">
+											<p class="text-muted mb-0">
+												Pris: <span class="fw-bold ms-2">25 Kr</span>
+											</p>
+											<button class="add-cart cart3 btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Legg til</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- ino-head-31326201-001-hero-x-0001 -->
+						<div class="col-md-6 col-lg-4 col-xl-3 mb-4 mix alpint head alpin alpinski hvit race wc rebels e-race ski"
+							data-pris="60" data-publisert="20230125">
+							<div class="card h-100">
+								<a href="./produktside.html"><img
+										src="./assets/img/Produktkatalog/ino-head-31326201-001-hero-x-0001.jpg"
+										class="card-img-top" alt="" style="height: 200px; object-fit: contain" /></a>
+								<div class="card-body d-flex flex-column">
+									<div class="d-flex justify-content-between">
+										<p class="small">
+											<a href="./produktside.html" class="text-muted">Head, Alpinski</a>
+										</p>
+									</div>
+
+									<div class="d-flex justify-content-between mb-5">
+										<h5 class="mb-0">
+											<a href="./produktside.html">Head · WC Rebels e-Race med Freeflex 11 GW
+												alpinski
+												m/binding</a>
+										</h5>
+									</div>
+
+									<div class="mt-auto">
+										<div class="d-flex justify-content-between align-items-center">
+											<p class="text-muted mb-0">
+												Pris: <span class="fw-bold ms-2">25 Kr</span>
+											</p>
+											<button class="add-cart cart4 btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Legg til</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- ino-fischer-N240191-242-x-hero-0001 -->
+						<div class="col-md-6 col-lg-4 col-xl-3 mb-4 mix langrenn fischer felleski svart sort gul gult twin skin twin-skin sport ski"
+							data-pris="25" data-publisert="20210528">
+							<div class="card h-100">
+								<a href="./produktside.html"><img
+										src="./assets/img/Produktkatalog/ino-fischer-N240191-242-x-hero-0001.jpg"
+										class="card-img-top" alt="" style="height: 200px; object-fit: contain" /></a>
+								<div class="card-body d-flex flex-column">
+									<div class="d-flex justify-content-between">
+										<p class="small">
+											<a href="./produktside.html" class="text-muted">Fischer, Langrenn</a>
+										</p>
+									</div>
+
+									<div class="d-flex justify-content-between mb-5">
+										<h5 class="mb-0">
+											<a href="./produktside.html">Fischer · Twin Skin Sport felleski</a>
+										</h5>
+									</div>
+
+									<div class="mt-auto">
+										<div class="d-flex justify-content-between align-items-center">
+											<p class="text-muted mb-0">
+												Pris: <span class="fw-bold ms-2">15 Kr</span>
+											</p>
+											<button class="add-cart cart5 btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Legg til</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- akebrett1 -->
+						<!-- Bilder må flyttes ut av egen mappe-->
+						<div class="col-md-6 col-lg-4 col-xl-3 mb-4 mix akebrett grønn gronn rund brett ake gizmo riders gizmo-riders rumpe rumpeake rumpeakebrett"
+							data-pris="15" data-publisert="20220321">
+							<div class="card h-100">
+								<a href="./produktside.html"><img
+										src="./assets/img/Produktkatalog/akebrett1.jpg" class="card-img-top"
+										alt="" style="height: 200px; object-fit: contain" /></a>
+								<div class="card-body d-flex flex-column">
+									<div class="d-flex justify-content-between">
+										<p class="small">
+											<a href="./produktside.html" class="text-muted">Gizmo Riders, Akebrett</a>
+										</p>
+									</div>
+
+									<div class="d-flex justify-content-between mb-5">
+										<h5 class="mb-0">
+											<a href="./produktside.html">Gizmo Riders · Supernova rumpeakebrett</a>
+										</h5>
+									</div>
+
+									<div class="mt-auto">
+										<div class="d-flex justify-content-between align-items-center">
+											<p class="text-muted mb-0">
+												Pris: <span class="fw-bold ms-2">5 Kr</span>
+											</p>
+											<button class="add-cart cart6 btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Legg til</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Ditt produkt er lagt til</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-prebody">
+					<div class="products-container">
+						<div class="row">
+							<div class="product-header col-12">
+								<div class="col-6 d-flex justify-content-start">
+									<h5 class="product-title">PRODUKTER</h5>
+								</div>
+								<div class="col-6 d-flex justify-content-end">
+									<h5 class="price">PRIS PER</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="modal-body">
+						
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fortsett å handle</button>
+					<button type="button" class="btn btn-primary" onclick="window.location.href='./handlekurv.html'">Gå til handlekurv</button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="text-center text-lg-start text-muted">
+		<div class="container">
+			<!-- Section: Links  -->
+			<section>
+				<div class="container text-center text-md-start mt-5">
+					<!-- Grid row -->
+					<div class="row mt-3">
+						<!-- Grid column -->
+						<div class="col-12 col-lg-4 mx-auto mb-4">
+							<!-- Content -->
+							<a class="navbar-brand mb-3 a-normal" href="#">
+								<h5>NATURKOLLEKTIVET</h5>
+							</a>
+							<p>
+								Vi satser på å tilby rimelige friluftsutstyr for enhver person. Vi kjøper brukt
+								utstyr,
+								undersøker det grundig og reparerer det, og gjør det tilgjengelig for leie til en
+								brøkdel av
+								prisen for nytt utstyr.
+							</p>
+						</div>
+						<!-- Grid column -->
+	
+						<!-- Grid column -->
+						<div class="col-6 col-sm-6 col-md-3 col-lg-2 mx-auto mb-4">
+							<!-- Links -->
+							<h6 class="text-uppercase fw-bold mb-4">
+								Snarveier
+							</h6>
+							<p>
+								<a href="./gibort.html" class="text-reset">Gi bort</a>
+							</p>
+							<p>
+								<a href="./utstyr.html" class="text-reset">Utstyr</a>
+							</p>
+							<p>
+								<a href="./omoss.html" class="text-reset">Om oss</a>
+							</p>
+							<p>
+								<a href="./kontaktoss.html" class="text-reset">Kontakt oss</a>
+							</p>
+							<p>
+								<a href="./lokasjoner.html" class="text-reset">Lokasjoner</a>
+							</p>
+						</div>
+						<!-- Grid column -->
+	
+						<!-- Grid column -->
+						<div class="col-6 col-sm-6 col-md-3 col-lg-2 mx-auto mb-4">
+							<!-- Links -->
+							<h6 class="text-uppercase fw-bold mb-4">
+								Artikler
+							</h6>
+							<p>
+								<a href="./artikkelFjelltur.html" class="text-reset">Fjelltur</a>
+							</p>
+							<p>
+								<a href="./artikkelAlpint.html" class="text-reset">Alpint</a>
+							</p>
+							<p>
+								<a href="./finnesIkke.html" class="text-reset">Langrenn</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Skøyting</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Skogstur</a>
+							</p>
+							<p>
+								<a href="#!" class="text-reset">Sykkeltur</a>
+							</p>
+						</div>
+						<!-- Grid column -->
+	
+						<!-- Grid column -->
+						<div class="col-12 col-sm-12 col-md-6 col-lg-4 mx-auto mb-md-0 mb-4">
+							<!-- Links -->
+							<h6 class="text-uppercase fw-bold mb-4">Kontakt oss</h6>
+							<p><i class="fas fa-home me-3"></i><a href="https://goo.gl/maps/v7SLvYJxnHLx2ciK7"
+									target="_blank">Benterudstranda 9</a></p>
+							<p>
+								<i class="fas fa-envelope me-3"></i>
+								<a href="mailto:kontakt@naturkollektivet.no" target="_blank">Kontakt@naturkollektivet.no</a>
+							</p>
+							<p><i class="fas fa-phone me-3"></i><a href="tel:+4712345678">+ 47 123 45 678</a></p>
+							<p><i class="fas fa-print me-3"></i><a href="tel:+4798765432">+ 47 987 65 432</a></p>
+						</div>
+						<!-- Grid column -->
+					</div>
+					<!-- Grid row -->
+				</div>
+			</section>
+			<!-- Section: Links  -->
+		</div>
+	
+	
+	
+		<!-- Copyright -->
+		<div class="text-center pt-3 pb-1" style="background-color: rgba(0, 0, 0, 0.05);">
+			<p style="margin-bottom: 0px;">© 2023 Copyright: <a class="text-reset fw-bold"
+					href="./index.html">naturkollektivet.no</a></p>
+			<p><a href="./cookies.html">Cookies | </a><a href="./personvern.html">Personvern</a></p>
+		</div>
+		<!-- Copyright -->
+	</footer>
+
+	<!-- SCRIPTS -->
+	<!-- JS-->
+	<script src="./assets/js/main.js"></script>
+	<script src="./assets/js/handlekurv.js"></script>
+	<!-- Bootstrap -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+	<!-- FONT AWESOME -->
+	<script src="https://kit.fontawesome.com/92cc2eddce.js" crossorigin="anonymous"></script>
+
+	<!-- AOS -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+	<!-- MixItUp -->
+	<script src="./assets/js/mixitup.min.js"></script>
+	<!-- Kategori valg funksjon-->
+	<script>
+		var products = document.querySelector("#produktkatalog-produkter");
+		var mixer = mixitup(products);
+	</script>
+	<!-- Sorterings funksjon -->
+	<script>
+		var selectSort = document.querySelector(".select-sort");
+
+		selectSort.addEventListener("change", function () {
+			var order = selectSort.value;
+
+			mixer.sort(order);
+		});
+	</script>
+
+	<!-- Søkefunksjon -->
+	<script>
+		var container = document.querySelector('[data-ref="container"]');
+		var inputSearch = document.querySelector('[data-ref="input-search"]');
+		var keyupTimeout;
+
+		var mixer = mixitup(container, {
+			animation: {
+				duration: 400,
+			},
+			callbacks: {
+				onMixClick: function () {
+					// Reset the search if a filter is clicked
+
+					if (this.matches("[data-filter]")) {
+						inputSearch.value = "";
+					}
+				},
+			},
+		});
+
+		// Set up a handler to listen for "keyup" events from the search input
+
+		inputSearch.addEventListener("keyup", function () {
+			var searchValue;
+
+			if (inputSearch.value.length < 1) {
+				// If the input value is less than 3 characters, don't send
+
+				searchValue = "";
+			} else {
+				searchValue = inputSearch.value.toLowerCase().trim();
+			}
+
+			// Very basic throttling to prevent mixer thrashing. Only search
+			// once 350ms has passed since the last keyup event
+
+			clearTimeout(keyupTimeout);
+
+			keyupTimeout = setTimeout(function () {
+				filterByString(searchValue);
+			}, 350);
+		});
+
+		/**
+		 * Filters the mixer using a provided search string, which is matched against
+		 * the contents of each target's "class" attribute. Any custom data-attribute(s)
+		 * could also be used.
+		 *
+		 * @param  {string} searchValue
+		 * @return {void}
+		 */
+
+		function filterByString(searchValue) {
+			if (searchValue) {
+				// Use an attribute wildcard selector to check for matches
+
+				mixer.filter('[class*="' + searchValue + '"]');
+			} else {
+				// If no searchValue, treat as filter('all')
+
+				mixer.filter("all");
+			}
+		}
+	</script>
+
+	<!-- Swiper JS -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+	<script>
+		const swiper = new Swiper('.swiper', {
+			//Pagination
+			pagination: {
+				el: '.swiper-pagination',
+				dynamicBullets: true,
+			},
+
+			//Breakpoints
+			slidesPerView: 3,
+			spaceBetween: 40,
+
+			breakpoints: {
+				576: {
+					slidesPerView: 4,
+					spaceBetween: 80,
+				},
+
+				768: {
+					slidesPerView: 5,
+					spaceBetween: 70,
+				},
+
+				992: {
+					slidesPerView: 7,
+					spaceBetween: 20,
+				},
+
+				1200: {
+					slidesPerView: 8,
+					spaceBetween: 0,
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>

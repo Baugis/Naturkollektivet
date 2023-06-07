@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif !important;
+}
+
+footer hr {
+    margin: 0;
+}
+
+footer a {
+    transition: all 0.1s ease 0s;
+}
+
+footer a:hover {
+    font-weight: 500;
+    transition: all 0.1s ease 0s;
+}
+
+/* BACKGROUND */
+.greyBackground {
+    background-color: #F4F6FA;
+}
+
+.bgColor {
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out 0s;
+    backdrop-filter: blur(10px);
+}
+
+.bg-primary {
+    background-color: #3C6E71 !important;
+}
+
+/* TEXT/FONT */
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 150%;
+    color: #232536;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #232536;
+    opacity: 87%;
+    font-family: 'Poppins', sans-serif !important;
+    line-height: 54px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 175%;
+    color: #575757;
+}
+
+ol li, ul li {
+    font-weight: 300;
+}
+
+a {
+    color: #575757;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+.active {
+    font-weight: 600;
+    background-color: transparent;
+}
+
+/* BUTTONS */
+.btn-lg {
+    padding: 0.5rem 1.6rem;
+}
+
+.btnActive {
+    background-color: #3C6E71;
+    color: white;
+}
+
+.btn-outline-white {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-outline-white:hover {
+    border: 1px solid rgb(224, 224, 224);
+    color: rgb(224, 224, 224);
+}
+
+.btn-outline-primary:focus {
+    box-shadow: none;
+}
+
+.btn-primary {
+    background-color: #3C6E71 !important;
+    border: none !important;
+}
+
+.btn-primary:focus {
+    box-shadow: none;
+}
+
+.btn-outline-primary {
+    color: #3C6E71 !important;
+    border-color: #3C6E71 !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #3C6E71 !important;
+    color: white !important;
+}
+
+/* MIXITUP */
+.mixitup-control-active {
+    background-color: #3C6E71 !important;
+    color: white !important;
+}
+
+/* CUSTOM BOOTSTRAP */
+.card {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: none;
+    border-radius: 10px;
+}
+
+.dropdown-menu-dark .dropdown-item.active {
+    background-color: transparent;
+}
+
+/* Lokasjon kart */
+#map {
+    height: 400px; /* The height is 400 pixels */
+    width: 80%; /* The width is the width of the web page */
+    margin-top: 40px;
+  }
+
+  button.gm-ui-hover-effect {
+    visibility: hidden;
+}
+
+/* Kontakt oss */
+.accordion-button {
+    display: flex;
+    align-items: center;
+    background-color: #F2F2F3;
+    border-radius: 10px !important;
+    transition: all 0.3s ease 0s;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.accordion-button:hover {
+    cursor: pointer;
+    background-color: rgb(218, 218, 219);
+    transition: all 0.3s ease 0s;
+}
+
+.accordion-button p {
+    font-weight: 300 !important;
+}
+
+.kontaktGuide p {
+    font-weight: 300;
+    margin: 0;
+}
+
+.accordion-button p {
+    max-height: 55px;
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.accordion-button h2 {
+    height: 70px;
+}
+
+.accordion-button::after {
+    visibility: hidden;
+}
+
+
+
+
+/* Index */
+#indexInformasjon {
+    background-color: white;
+}
+
+#indexInformasjonBilde img {
+    height: 370px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#indexGibort {
+    background-color: #3C6E71;
+}
+
+#indexGibort h4, #indexGibort h2, #indexGibort p {
+    color: white;
+}
+
+.indexGibortBoks {
+    background-color: white;
+    padding: 20px;
+}
+
+.indexGibortBoksTekst p{
+    color: #232536 !important;
+    font-size: 14px;
+}
+
+.indexGibortBoksOverskrift {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.indexGibortBoksIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(60, 110, 113, 0.1);
+    height: fit-content;
+    width: 44px;
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+#indexVerdier {
+    background-color: #F9F9F9;
+}
+
+.indexVerdierBoks {
+    background-color: white;
+    padding: 40px;
+    transition: all 0.3s ease 0s;
+}
+
+.indexVerdierBoks:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transform: translateY(-5px);
+    transition: all 0.3s ease 0s;
+}
+
+.indexVerdierBoksIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(60, 110, 113, 0.1);
+    height: fit-content;
+    width: 44px;
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.indexVerdierBoks p {
+    font-size: 16px;;
+}
+
+.indexVerdierBoksOverskrift {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+#indexArtikler {
+    background-color: #ECF8F9;
+}
+
+.indexArtiklerBoks {
+    background-color: white;
+    transition: all 0.3s ease 0s;
+}
+
+.indexArtiklerBoks:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+    transform: translateY(-5px);
+    transition: all 0.3s ease 0s;
+}
+
+.indexArtiklerBoksInnhold {
+    padding: 30px;
+}
+
+.indexArtiklerBoksInnhold h4 {
+    line-height: 36px;
+}
+
+.indexArtiklerBoks img {
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.indexArtiklerBoksFooter img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.indexArtiklerBoksFooterTekst {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.indexArtiklerBoksFooterTekst p {
+    margin: 0;
+}
+
+.indexArtiklerBoksFooterTekstNavn {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: -5px !important;
+}
+
+.indexArtiklerBoksFooterTekstDato {
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 60%;
+}
+
+/* Artikkel */
+#artikkelBekledning {
+    background-color: #ECF8F9;
+}
+
+#artikkelBekledning ul li {
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 60%;
+    line-height: 24px;
+}
+
+/* Gi bort */
+#GiBortOverskrift {
+    background-color: #3C6E71;
+    color: white;
+}
+
+#GiBortOverskrift p {
+    color: white;
+}
+
+
+#UtstyrInformasjon {
+    background-color: white;
+}
+
+#KontaktInformasjon {
+    background-color: white;
+}
+
+.gibortGibortBoksIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(60, 110, 113, 0.1);
+    height: fit-content;
+    width: 44px;
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
+.FAQgibort {
+    background-color: white;
+}
+
+.FAQgibort.accordion-item {
+    margin: 0px;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #3C6E71;
+    color: white;
+}
+
+.accordion-button:not(.collapsed) p {
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}

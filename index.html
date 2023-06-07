@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naturkollektivet</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        span {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="navbar">
+            <!-- Container wrapper -->
+            <div class="container">
+                <a class="navbar-brand fw-bold text-white" href="./index.html">NATURKOLLEKTIVET</a>
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <!-- Left links -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./gibort.html">Gi bort</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./utstyr.html">Utstyr</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Artikler</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./artikkelFjelltur.html">Fjelltur</a></li>
+                                <li><a class="dropdown-item" href="./artikkelAlpint.html">Alpint</a></li>
+                                <li><a class="dropdown-item" href="./finnesIkke.html">Langrenn</a></li>
+                                <li><a class="dropdown-item" href="./finnesIkke.html">Skøyting</a></li>
+                                <li><a class="dropdown-item" href="./finnesIkke.html">Skogstur</a></li>
+                                <li><a class="dropdown-item" href="./finnesIkke.html">Sykkeltur</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./kontaktoss.html">Kontakt</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./omoss.html">Om oss</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="./lokasjoner.html">Lokasjoner</a>
+                        </li>
+                    </ul>
+
+                    <div class="cart-btn">
+                        <div class="cart">
+                            <img src="./assets/img/Ikoner/shopping-bag.png" alt="handle-bag"
+                                style="width: 30px; filter: invert(100%)" class="handlevogn" /><a
+                                href="./handlekurv.html" id="test"><span></span></a>
+                        </div>
+                    </div>
+                    <!-- Left links -->
+                </div>
+                <!-- Collapsible wrapper -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+
+        <!-- Background image -->
+        <div class="bg-image vh-100"
+            style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./assets/img/Forside/david-marcu-78A265wPiO4-unsplash.jpg'); background-position-y: 60%; background-size: cover;">
+
+            <!-- Container -->
+            <div class="container d-flex justify-content-center align-items-center h-100">
+
+                <!-- Call To Action-->
+                <div class="text-white text-center" data-aos="zoom-in" data-aos-duration="1200">
+                    <h1 class="mb-1">Lån utstyr til sport og friluftsliv</h1>
+                    <p class="mb-3 fw-bold text-white" style="opacity: 60%;">SAMMEN FOR EN GRØNNERE FREMTID</p>
+                    <a class="btn btn-primary m-2 btn-lg" href="./utstyr.html" role="button">Finn utstyr for deg<i
+                            class="fas fa-arrow-right ms-2"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="mb-6">
+        <section id="indexInformasjon">
+            <div class="container">
+                <div class="row pt-5 pb-5">
+                    <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                        <h4>Vårt mål</h4>
+                        <h2>Vi satser på en miljøvennlig løsning som er rimelig, slik at alle skal ha muligheten til å
+                            oppleve naturen</h2>
+                        <p>Vårt mål er å gjøre det store utendørs tilgjengelig for alle, uavhengig av budsjett. Enten du
+                            er en erfaren
+                            proff eller bare begynner, har vi utstyret du trenger for å nyte din neste opplevelse med
+                            venner og familie.</p>
+                    </div>
+
+                    <div class="col-12 col-lg-6" id="indexInformasjonBilde" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-once="true">
+                        <img src="assets/img/Forside/arthur-poulin-NhU0nUR7920-unsplash.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="indexGibort">
+            <div class="container">
+                <div class="row pt-5 pb-5 justify-content-between align-items-center">
+                    <div class="col-12 col-lg-6 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+                        <h4>Gi bort utstyr</h4>
+                        <h2>Vi henter ditt ødelagte/brukte utstyr uten at du trenger å forholde deg til flere parter
+                        </h2>
+                        <p>Vi satser på å tilby rimelige friluftsutstyr for enhver person. Vi kjøper brukt utstyr,
+                            undersøker det grundig og reparerer det, og gjør det tilgjengelig for leie til en brøkdel av
+                            prisen for nytt utstyr</p>
+                        <a class="btn btn-outline-white btn-lg" href="./gibort.html">Gi bort her</a>
+                    </div>
+
+                    <div class="col-12 col-lg-5">
+                        <div class="indexGibortBoks d-flex justify-content-center mb-3" data-aos="fade-up"
+                            data-aos-duration="1000" data-aos-delay="600" data-aos-offset="400" data-aos-once="true">
+                            <div class="indexGibortBoksIcon me-3">
+                                <i class="fa-solid fa-bicycle"></i>
+                            </div>
+                            <div class="indexGibortBoksTekst">
+                                <p class="indexGibortBoksOverskrift">Du legger inn utstyret du vil gi bort</p>
+                                <p>Naviger til <a href="./gibort.html">gi bort</a>, og velg tilstand på ditt utstyr. Er
+                                    det noen mindre skader eller manger, kommenter ved disse</p>
+                            </div>
+                        </div>
+
+                        <div class="indexGibortBoks d-flex justify-content-center mb-3" data-aos="zoom-in"
+                            data-aos-duration="1000" data-aos-once="true">
+                            <div class="indexGibortBoksIcon me-3">
+                                <i class="fa-solid fa-door-closed"></i>
+                            </div>
+                            <div class="indexGibortBoksTekst">
+                                <p class="indexGibortBoksOverskrift">Vi kommer og henter det på døren din</p>
+                                <p>Etter at utstyret er registret får du en tilbakemelding om et tidsrom der vi vil
+                                    hente utstyret ditt, og legg det lett tilgjengelig </p>
+                            </div>
+                        </div>
+
+                        <div class="indexGibortBoks d-flex justify-content-center mb-3" data-aos="fade-down"
+                            data-aos-duration="1000" data-aos-delay="600" data-aos-offset="106" data-aos-once="true">
+                            <div class="indexGibortBoksIcon me-3">
+                                <i class="fa-solid fa-comment"></i>
+                            </div>
+                            <div class="indexGibortBoksTekst">
+                                <p class="indexGibortBoksOverskrift">Du mottar en bekreftelse når vi har hentet utstyret
+                                </p>
+                                <p>Du vil motta en bekreftelse så fort vår sjåfør har hentet utstyret ditt, samt en
+                                    bekreftelse. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="indexVerdier">
+            <div class="container">
+                <div class="row pt-5 mb-5 justify-content-center">
+                    <div class="col-10 col-md-12 col-lg-8 text-center" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-once="true">
+                        <h4>Våre verdier</h4>
+                        <h2>Vi skal etter beste evne få alle som ønsker ut i naturen, uansett forusetning</h2>
+                    </div>
+                </div>
+
+                <div class="row pb-5">
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="col-12 col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="1000"
+                                data-aos-once="true">
+                                <div class="indexVerdierBoks h-100">
+                                    <div class="indexVerdierBoksIcon mb-3">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <p class="indexVerdierBoksOverskrift">Tilgjengelig</p>
+                                    <p>Vi ønsker å gjøre det lett for folk å komme seg ut i naturen og ha en god tid med
+                                        sine venner og familie.</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="1000"
+                                data-aos-once="true">
+                                <div class="indexVerdierBoks h-100">
+                                    <div class="indexVerdierBoksIcon mb-3">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <p class="indexVerdierBoksOverskrift">Rimelig</p>
+                                    <p>Vi satser på å gjøre det mulig for alle å oppleve naturen, ved å tilby
+                                        kvalitetsutstyr til rimelige priser</p>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 mb-3" data-aos="fade-up" data-aos-duration="1000"
+                                data-aos-once="true">
+                                <div class="indexVerdierBoks h-100">
+                                    <div class="indexVerdierBoksIcon mb-3">
+                                        <i class="fa-solid fa-check"></i>
+                                    </div>
+                                    <p class="indexVerdierBoksOverskrift">Miljøvennlig</p>
+                                    <p>Vårt mål er å være en miljøvennlig bedrift ved å kjøpe opp og reparere brukt
+                                        utstyr, i stedet for å produsere mer av det nye.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="indexArtikler">
+            <div class="container">
+                <div class="row pt-5 mb-2">
+                    <div class="col-12 d-flex justify-content-between" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-once="true">
+                        <h4>Siste artikler</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-xl-4 mb-4" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-once="true">
+                        <a href="./artikkelFjelltur.html">
+                            <div class="indexArtiklerBoks h-100 d-flex flex-column">
+                                <img src="./assets/img/Forside/christopher-burns--jbsw_GUK74-unsplash.jpg"
+                                    alt="bilde av noen på fjelltur">
+                                <div class="indexArtiklerBoksInnhold d-flex flex-column h-100">
+                                    <h4>Hva du bør passe på når du skal på fjelltur</h4>
+                                    <p>Det viktigste er å tenke gjennom hva du kan komme til å trenge god tid i
+                                        forveien. Det er for sent når uhellet er ute. </p>
+                                    <div class="indexArtiklerBoksFooter d-flex align-items-center mt-auto">
+                                        <img src="./assets/img/Forside/austin-wade-X6Uj51n5CE8-unsplash(1).jpg"
+                                            alt="Bilde av henrik Ibsen">
+                                        <div class="indexArtiklerBoksFooterTekst ms-2">
+                                            <p class="indexArtiklerBoksFooterTekstNavn">Henrik Ibsen</p>
+                                            <p clasS="indexArtiklerBoksFooterTekstDato">23 Feb, 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-xl-4 mb-4" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-once="true">
+                        <a href="./artikkelAlpint.html">
+                            <div class="indexArtiklerBoks h-100 d-flex flex-column">
+                                <img src="./assets/img/Forside/maarten-duineveld-pmfJcN7RGiw-unsplash.jpg"
+                                    alt="Bilde av en person som står på alpint">
+                                <div class="indexArtiklerBoksInnhold d-flex flex-column h-100">
+                                    <h4>Hva som er kjekt å ha med seg i bakken</h4>
+                                    <p>Det kan fort bli kaldt når du skal stå i bakken, derfor er det viktig å kle seg
+                                        riktig og ha med bra utstyr så dagen blir gøy!</p>
+                                    <div class="indexArtiklerBoksFooter d-flex align-items-center mt-auto">
+                                        <img src="./assets/img/Forside/maarten-duineveld-pmfJcN7RGiw-unsplash.jpg"
+                                            alt="Bilde av henrik Ibsen">
+                                        <div class="indexArtiklerBoksFooterTekst ms-2">
+                                            <p class="indexArtiklerBoksFooterTekstNavn">Morten Bergsett</p>
+                                            <p clasS="indexArtiklerBoksFooterTekstDato">11 Jan, 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-xl-4 mb-4" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-once="true">
+                        <a href="./finnesIkke.html">
+                            <div class="indexArtiklerBoks h-100 d-flex flex-column">
+                                <img src="./assets/img/Forside/phillip-belena-eY-iYrKGOkw-unsplash.jpg"
+                                    alt="Bilde av noen som står på langrenn">
+                                <div class="indexArtiklerBoksInnhold d-flex flex-column h-100">
+                                    <h4>Langrenn er gøy med riktige ski! Vi hjelper deg</h4>
+                                    <p>Når du skal velge langrennski må du passe på spennet i skien samt lengden. Sjekk
+                                        vår størrelsesguide for å finne den perfekte skien for deg!</p>
+                                    <div class="indexArtiklerBoksFooter d-flex align-items-center mt-auto">
+                                        <img src="./assets/img/Forside/maarten-duineveld-pmfJcN7RGiw-unsplash.jpg"
+                                            alt="Bilde av Henrik Ibsen">
+                                        <div class="indexArtiklerBoksFooterTekst ms-2">
+                                            <p class="indexArtiklerBoksFooterTekstNavn">Morten Bergsett</p>
+                                            <p clasS="indexArtiklerBoksFooterTekstDato">30 Des, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-xl-4 mb-4" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-once="true">
+                        <a href="./finnesIkke.html">
+                            <div class="indexArtiklerBoks h-100 d-flex flex-column">
+                                <img src="./assets/img/Forside/kevin-petit-50VBEjeYsrw-unsplash.jpg" alt="Bilde av">
+                                <div class="indexArtiklerBoksInnhold d-flex flex-column h-100">
+                                    <h4>Det er fort å gå seg vill, men ikke med riktig utstyr</h4>
+                                    <p>Det er godt å komme seg ut i naturen, så lenge man passer på å ha med det mang
+                                        trenger. Sjekk listen vår for en fullstendig pakkeliste til de forskjellige
+                                        behov</p>
+                                    <div class="indexArtiklerBoksFooter d-flex align-items-center mt-auto">
+                                        <img src="./assets/img/Forside/austin-wade-X6Uj51n5CE8-unsplash(1).jpg" alt="">
+                                        <div class="indexArtiklerBoksFooterTekst ms-2">
+                                            <p class="indexArtiklerBoksFooterTekstNavn">Henrik Ibsen</p>
+                                            <p clasS="indexArtiklerBoksFooterTekstDato">21 Des, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-xl-4 mb-4" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-once="true">
+                        <a href="./finnesIkke.html">
+                            <div class="indexArtiklerBoks h-100 d-flex flex-column">
+                                <img src="./assets/img/Forside/lucas-van-oort-_FjIWDrtfmU-unsplash.jpg" alt="">
+                                <div class="indexArtiklerBoksInnhold d-flex flex-column h-100">
+                                    <h4>Pass på skøytene, de kan være skarpe!</h4>
+                                    <p>SKal du på skøyte tur burde du kle deg godt, og ta med gode skøyter. Vi har alt
+                                        du trenger!</p>
+                                    <div class="indexArtiklerBoksFooter d-flex align-items-center mt-auto">
+                                        <img src="./assets/img/Forside/lucas-van-oort-_FjIWDrtfmU-unsplash.jpg" alt="">
+                                        <div class="indexArtiklerBoksFooterTekst ms-2">
+                                            <p class="indexArtiklerBoksFooterTekstNavn">Johannes Einarsen</p>
+                                            <p clasS="indexArtiklerBoksFooterTekstDato">01 Nov, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-lg-6 col-xl-4 mb-4" data-aos="fade-up" data-aos-duration="1000"
+                        data-aos-once="true">
+                        <a href="./finnesIkke.html">
+                            <div class="indexArtiklerBoks h-100 d-flex flex-column">
+                                <img src="./assets/img/Forside/suzanne-rushton-cRtZluwGleI-unsplash.jpg" alt="">
+                                <div class="indexArtiklerBoksInnhold d-flex flex-column h-100">
+                                    <h4>Tour de Norge med familien</h4>
+                                    <p>Ta det rolig, men en god sykkel og nyt det fine sykkelværet. Vi har sykler til
+                                        alle alder, både hybrid og landeveissyler. Usikker på hva du skal ha? Les guiden
+                                        vår</p>
+                                    <div class="indexArtiklerBoksFooter d-flex align-items-center mt-auto">
+                                        <img src="./assets/img/Forside/jonas-kakaroto-mjRwhvqEC0U-unsplash.jpg" alt="">
+                                        <div class="indexArtiklerBoksFooterTekst ms-2">
+                                            <p class="indexArtiklerBoksFooterTekstNavn">Kåre Pettersen</p>
+                                            <p clasS="indexArtiklerBoksFooterTekstDato">22 Aug, 2022</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row pb-5">
+                    <div class="col-12 d-flex justify-content-end">
+                        <a href="./artikkelFjelltur.html" class="btn btn-lg btn-primary">
+                            Se alt
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-lg-start text-muted">
+            <div class="container">
+                <!-- Section: Links  -->
+                <section>
+                    <div class="container text-center text-md-start mt-5">
+                        <!-- Grid row -->
+                        <div class="row mt-3">
+                            <!-- Grid column -->
+                            <div class="col-12 col-lg-4 mx-auto mb-4">
+                                <!-- Content -->
+                                <a class="navbar-brand mb-3 a-normal" href="#">
+                                    <h5>NATURKOLLEKTIVET</h5>
+                                </a>
+                                <p>
+                                    Vi satser på å tilby rimelige friluftsutstyr for enhver person. Vi kjøper brukt
+                                    utstyr,
+                                    undersøker det grundig og reparerer det, og gjør det tilgjengelig for leie til en
+                                    brøkdel av
+                                    prisen for nytt utstyr.
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-6 col-sm-6 col-md-3 col-lg-2 mx-auto mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Snarveier
+                                </h6>
+                                <p>
+                                    <a href="./gibort.html" class="text-reset">Gi bort</a>
+                                </p>
+                                <p>
+                                    <a href="./utstyr.html" class="text-reset">Utstyr</a>
+                                </p>
+                                <p>
+                                    <a href="./omoss.html" class="text-reset">Om oss</a>
+                                </p>
+                                <p>
+                                    <a href="./kontaktoss.html" class="text-reset">Kontakt oss</a>
+                                </p>
+                                <p>
+                                    <a href="./lokasjoner.html" class="text-reset">Lokasjoner</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-6 col-sm-6 col-md-3 col-lg-2 mx-auto mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">
+                                    Artikler
+                                </h6>
+                                <p>
+                                    <a href="./artikkelFjelltur.html" class="text-reset">Fjelltur</a>
+                                </p>
+                                <p>
+                                    <a href="./artikkelAlpint.html" class="text-reset">Alpint</a>
+                                </p>
+                                <p>
+                                    <a href="./finnesIkke.html" class="text-reset">Langrenn</a>
+                                </p>
+                                <p>
+                                    <a href="./finnesIkke.html" class="text-reset">Skøyting</a>
+                                </p>
+                                <p>
+                                    <a href="./finnesIkke.html" class="text-reset">Skogstur</a>
+                                </p>
+                                <p>
+                                    <a href="./finnesIkke.html" class="text-reset">Sykkeltur</a>
+                                </p>
+                            </div>
+                            <!-- Grid column -->
+
+                            <!-- Grid column -->
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-4 mx-auto mb-md-0 mb-4">
+                                <!-- Links -->
+                                <h6 class="text-uppercase fw-bold mb-4">Kontakt oss</h6>
+                                <p><i class="fas fa-home me-3"></i><a href="https://goo.gl/maps/v7SLvYJxnHLx2ciK7"
+                                        target="_blank">Benterudstranda 9</a></p>
+                                <p>
+                                    <i class="fas fa-envelope me-3"></i>
+                                    <a href="mailto:kontakt@naturkollektivet.no"
+                                        target="_blank">Kontakt@naturkollektivet.no</a>
+                                </p>
+                                <p><i class="fas fa-phone me-3"></i><a href="tel:+4712345678">+ 47 123 45 678</a></p>
+                                <p><i class="fas fa-print me-3"></i><a href="tel:+4798765432">+ 47 987 65 432</a></p>
+                            </div>
+                            <!-- Grid column -->
+                        </div>
+                        <!-- Grid row -->
+                    </div>
+                </section>
+                <!-- Section: Links  -->
+            </div>
+
+
+
+            <!-- Copyright -->
+            <div class="text-center pt-3 pb-1" style="background-color: rgba(0, 0, 0, 0.05);">
+                <p style="margin-bottom: 0px;">© 2023 Copyright: <a class="text-reset fw-bold"
+                        href="./index.html">naturkollektivet.no</a></p>
+                <p><a href="./cookies.html">Cookies | </a><a href="./personvern.html">Personvern</a></p>
+            </div>
+            <!-- Copyright -->
+        </footer>
+    </main>
+
+
+    <!-- SCRIPTS -->
+    <!-- JS-->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/handlekurv.js"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/92cc2eddce.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
